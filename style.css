@@ -128,6 +128,7 @@ img{
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
+    background-color: var(--body-color);
 }
 
 /*NAV*/
@@ -276,7 +277,7 @@ img{
 }
 
 .home_scroll-button:hover{
-    transform: translateY(.25rem);
+    transform: translateY(0.25rem);
 }
 
 .home_scroll-mouse{
@@ -350,7 +351,7 @@ img{
 
 .about_info-title,
 .about_info-name{
-    display: bock;
+    display: block;
     text-align: center;
 }
 
@@ -381,8 +382,13 @@ img{
     margin-right: var(--mb-0-75);
 }
 
-.skills_title{
+.skills_titles{
     font-size: var(--h3-font-size);
+    color: var(--text-color-light);
+}
+
+.skills_subtitle{
+    font-size: var(--small-font-size);
     color: var(--text-color-light);
 }
 
@@ -532,11 +538,15 @@ img{
 }
 
 .qualification [data-content]{
-    display: none
+    display: none;
 }
 
 .qualification_active[data-content]{
     display: block;
+}
+
+.qualification_button.qualification_active{
+    color: var(--first-color);
 }
 
 /*SERVICES*/

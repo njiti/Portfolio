@@ -30,10 +30,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*ACCORDION SKILLS*/
 const skillsContent = document.getElementsByClassName('skills_content'),
-       skillsHeader = document.querySelectorAll('.skills_header')
+      skillsHeader = document.querySelectorAll('.skills_header')
 
 function toggleSkills(){
-    let itemClass = this.parentNode.className
+    let itemClass = this.parentNode.getElementByClassName
 
     for(i = 0; i < skillsContent.length; i++){
         skillsContent[i].className = 'skills_content skills_close'
@@ -53,7 +53,7 @@ const tabs = document.querySelectorAll('[data-target]'),
 
 tabs.forEach(tab => {
     tab.addEventListener('click', () =>{
-        const target = document.querySelector(data.database.target)
+        const target = document.querySelector(tab.database.target)
 
         tabContents.forEach(tabContent =>{
             tabContent.classList.remove('qualification_active')
