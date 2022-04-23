@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <!--UNICONS-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!--SWIPER CSS-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -620,10 +625,10 @@
             <h2 class="section_title">Portfolio</h2>
             <span class="section_subtitle">Most recent work</span>
 
-            <div class="porfolio_container container">
-                <div>
-                <!--PORTFOLIO-->
-                <div class="portfolio_content grid">
+            <div class="porfolio_container container swiper-container">
+                <div class="swiper-wrapper">
+                <!--PORTFOLIO 1-->
+                <div class="portfolio_content grid swiper-slide">
                     <img src="about.jpg" alt="" class="portfolio_img">
 
                     <div class="portfolio_data">
@@ -637,13 +642,102 @@
                         </a>
                     </div>
                 </div>
+
+                <!--PORTFOLIO 2-->
+                <div class="portfolio_content grid swiper-slide">
+                    <img src="about.jpg" alt="" class="portfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">Brand Design</h3>
+                        <p class="portfolio_description">Website adaptable to all devices, with ui
+                            and animated interactions.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio_button">
+                            Demo
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--PORTFOLIO 3-->
+                <div class="portfolio_content grid swiper-slide">
+                    <img src="about.jpg" alt="" class="portfolio_img">
+
+                    <div class="portfolio_data">
+                        <h3 class="portfolio_title">Online Store</h3>
+                        <p class="portfolio_description">Website adaptable to all devices, with ui
+                            and animated interactions.
+                        </p>
+                        <a href="#" class="button button--flex button--small portfolio_button">
+                            Demo
+                            <i class="uil uil-arrow-right button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+            <!--Add Arrows-->
+            <div class="swiper-button-next">\
+                <i class="uil uil-angle-right-b swiper-porfolio-icon"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b"></i>
+            </div>
+
+            <!--Add Pagination-->
+            <div class="swiper-paginagion"></div>
+        </section>
+
+        <!--PROJECT IN MIND-->
+        <section class="project section">
+            <div class="project_bg">
+                <div class="project_container container grid">
+                    <div class="project_title">
+                        <h2 class="project_title">You have a new project</h2>
+                        <p class="project_description">Contact me now and get a 30% discount</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="uil uil-message project_icon button_icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="project.png" alt="" class="project_img">
                 </div>
             </div>
         </section>
-        <!--PROJECT IN MIND-->
+
+        <!--TESTIMONIAL-->
+        <section class="testimonial section">
+            <h2 class="section_title">Testimonial</h2>
+            <span class="section_subtitle">My client saying</span>
+
+            <div class="testimonial_container container">
+                <div>
+                    <!--TESTIMONIAL 1-->
+                    <div class="testimonial_content">
+                        <div class="testimonial_data">
+                            <div class="testimonial_header">
+                                <img src="testimonial1.png" alt="" class="testimonial_img">
+
+                                <div>
+                                    <h3 class="testimonial_name">Sara Smith</h3>
+                                    <span class="testimonial_client">Client</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--TESTIMONIAL-->
     </main>
-    <script src=""></script>
+    <!--SWIPER JS-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--MAIN JS-->
     <script src="main.js"></script>
 </body>
 </html>
